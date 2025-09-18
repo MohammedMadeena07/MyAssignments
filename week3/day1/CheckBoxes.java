@@ -24,8 +24,7 @@ public class CheckBoxes {
 		// Click on the "Notification Checkbox."
 		driver.findElement(By.xpath("(//span[text()='Ajax']/preceding-sibling::div)[2]")).click();
 		// Verify that the expected message is displayed.
-		String checkboxNotification = driver.findElement(By.xpath("//div[@class='ui-growl-message']/child::span"))
-				.getText();
+		String checkboxNotification = driver.findElement(By.xpath("//div[@class='ui-growl-message']/span")).getText();
 		String expectedCheckboxNotification = "Checked";
 		if (checkboxNotification.equals(expectedCheckboxNotification)) {
 			System.out.println("Expected message is displayed as: " + checkboxNotification);
