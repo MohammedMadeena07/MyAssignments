@@ -1,6 +1,7 @@
 package week3.day2.overriding;
 
 public class LoginPage extends BasePage {
+	@Override
 	public void performCommonTasks() {
 		String text = "Login Page";
 		System.out.println(text + " is loaded");
