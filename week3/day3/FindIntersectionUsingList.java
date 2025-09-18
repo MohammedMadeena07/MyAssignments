@@ -9,7 +9,6 @@ public class FindIntersectionUsingList {
 		// Declaring 2 arrays
 		int[] array1 = { 3, 2, 11, 4, 6, 7 };
 		int[] array2 = { 1, 2, 8, 4, 9, 7 };
-
 		// Adding elements of both arrays to list
 		List<Integer> arraylist1 = new ArrayList<>();
 		for (int i = 0; i < array1.length; i++) {
@@ -22,9 +21,8 @@ public class FindIntersectionUsingList {
 		// Sorting array lists
 		Collections.sort(arraylist1);
 		Collections.sort(arraylist2);
-
 		System.out.println("Intersection/Duplicate Values: ");
-
+		// Comparing both the arrays & Print the equal values
 		for (int num : arraylist1) {
 			if (arraylist2.contains(num)) {
 				System.out.println(num);
